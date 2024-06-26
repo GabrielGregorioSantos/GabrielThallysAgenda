@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contato</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+     <div id="cabecalho">
+            <h1>Cadastro de Contato</h1>
+    </div>
+    <div id="contato-container">
+        <div id="formulario-contato">
+            <div id="formulario">
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="text" id="sobrenome" placeholder="Sobrenome">
+                <input type="text" id="endereco" placeholder="Endereço">
+                <input type="number" id="telefone" placeholder="Telefone">
+            </div>
+            <div id="botoes-contato">
+                <button type="button" id="botao-incluir" class="botao verde">Incluir</button>
+                <button type="button" id="botao-editar" class="botao laranja">Editar</button>
+                <button type="button" id="botao-salvar" class="botao azul">Salvar</button>
+                <button type="button" id="botao-cancelar" class="botao cinza">Cancelar</button>
+                <button type="button" id="botao-excluir" class="botao vermelho">Excluir</button>
+            </div>
+        </div>
+        <div id="navegacao">
+            <button id="primeiro">|&lt;</button>
+            <button id="anterior">&lt;</button>
+            <button id="proximo">&gt;</button>
+            <button id="ultimo">&gt;|</button>
+        </div>
+        
+    </div>
+    <footer>AGENDA DE CONATOS</footer>
+    <script src="contatos.js"></script>
+</body>
+</html>

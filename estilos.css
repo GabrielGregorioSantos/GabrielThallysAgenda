@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 50%;
+    height: 50%;
+}
+
+#contato-container {
+    max-width: 900px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+#cabecalho {
+    background-color: #00c0e6;
+    color: white;
+    padding: 10px;
+    text-align: start;
+}
+
+#formulario-contato {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    align-items: start;
+}
+
+#formulario {
+    display: grid;
+    gap: 10px;
+}
+
+#formulario input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#botoes-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#botoes-contato button {
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.verde {
+    background-color: #28a745;
+}
+
+.laranja {
+    background-color: #ffc107;
+}
+
+.azul {
+    background-color: #17a2b8;
+}
+
+.cinza {
+    background-color: #6c757d;
+}
+
+.vermelho {
+    background-color: #dc3545;
+}
+
+#navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#navegacao button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #formulario-contato {
+        grid-template-columns: 1fr;
+    }
+
+    #botoes-contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #botoes-contato button {
+        flex: 1 1 48%;
+        margin-bottom: 10px;
+    }
+}
+.oculto {
+    display: none;
+}
+.desabilitado {
+    opacity: 0.2;
+    pointer-events: none; 
+}
+footer{
+    text-align: center;
+    margin-top: 0;
+    background-color: white;
+    padding: 1%;
+    color: #00c0e6;
+    margin-top: 22%;
+}
